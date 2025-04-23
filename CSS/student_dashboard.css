@@ -1,0 +1,182 @@
+/* === Global Styles === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('/dept/img/Designer.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* === Navbar === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* === Container === */
+.container {
+    margin-top: 120px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 40px;
+    width: 60%;
+    max-width: 1100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* === Heading === */
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* === Table Styling === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+thead {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+td a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* === No Messages Text === */
+p {
+    font-size: 18px;
+    color: #555;
+}
+.back-button:hover {
+    background-color: #003d80;
+}
+/* === Footer === */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    backdrop-filter: blur(8px);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin-top: 120px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 12px;
+    }
+
+    td {
+        text-align: right;
+        padding: 10px;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        color: #333;
+        text-align: left;
+    }
+}
+.logo img {
+    height: 90px;     /* Adjust height to make it smaller */
+    width: auto;      /* Maintain aspect ratio */
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}

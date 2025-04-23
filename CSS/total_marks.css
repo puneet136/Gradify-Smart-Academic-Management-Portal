@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('/dept/img/Designer.png') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    color: #000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003366;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+thead th {
+    background-color: #003366;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+tbody td {
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e6f2ff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff416c;
+}
+
+/* Logo Section */
+.logo-container {
+    margin-top: 20px;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* Dashboard Section */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 240px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+button i {
+    margin-right: 6px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Footer */
+.footer {
+    margin-top: 60px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+}

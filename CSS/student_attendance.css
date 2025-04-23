@@ -1,0 +1,142 @@
+/* student_attendance.css */
+body {
+    font-family: Arial, sans-serif;
+    background: url("/dept/img/Designer.png") no-repeat center center fixed; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.attendance-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.attendance-container h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #d97878;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td {
+    background-color: #333;
+}
+
+table td, th {
+    font-size: 1.1em;
+    color: #ddd;
+}
+
+table td {
+    color: #fff;
+    font-size: 1em;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Optional: to center logo */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer {
+    margin-top: 105px;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-right {
+    text-align: right;
+}

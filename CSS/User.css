@@ -1,0 +1,194 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('/dept/img/Designer.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Header */
+header {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 160px;
+    margin-top: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Cards */
+.performance {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1 1 calc(33% - 40px);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 260px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    margin-top: 105px;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1);
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+/* Dark Mode */
+.dark-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.dark-toggle:hover {
+    background: #333;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode .card {
+    background: rgba(40, 40, 40, 0.6);
+    color: #fff;
+}
+
+body.dark-mode .card button {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .performance {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-right {
+        text-align: left;
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,203 @@
+/* exam-notice.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('/Gradify/image/Background.jpg'); /* Adjust path as needed */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 600px;
+    padding: 20px;
+}
+
+.logo-container img {
+    height: 80px;
+    width: auto;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.60); /* slight transparency */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-left {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .header-center img.logo {
+    height: 50px;
+  }
+  
+  .header-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .header-right a:hover {
+    color: #007bff;
+  }
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #121111;
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.exam-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: bold;
+}
+
+.exam-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.exam-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.exam-form button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #eafaf1;
+    border-left: 5px solid #2ecc71;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+table td input {
+    width: 90%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+table button:hover {
+    background-color: #218838;
+}
+
+table a {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+.back-button:hover {
+    background-color: #003d80;
+}

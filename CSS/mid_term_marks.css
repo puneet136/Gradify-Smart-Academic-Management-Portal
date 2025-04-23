@@ -1,0 +1,235 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: url('/dept/img/Designer.png') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    color: #000;
+    padding: 30px;
+}
+
+/* Title/Header */
+h2 {
+    text-align: center;
+    color: #273c75;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Form wrapper */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f1f1f1;
+    color: #273c75;
+    font-weight: bold;
+}
+
+td input[type="text"],
+td input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+td input:focus {
+    border-color: #40739e;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    table, form {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url('/dept/img/Designer.png') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff416c;
+}
+
+/* Logo Section */
+.logo-container {
+    margin-top: 20px;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+/* Dashboard Section */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 240px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+button i {
+    margin-right: 6px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Footer */
+.footer {
+    margin-top: 150px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    color: #000;
+}

@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('/dept/img/Designer.png') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+    padding: 15px 30px;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Header logo */
+.header {
+    margin-top: 20px;
+}
+
+.header img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Table styles */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #0e0e0e, #090909);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(23, 23, 23, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.back-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.back-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(23, 23, 23, 0.6);
+}
+
+.back-btn:hover::before {
+    opacity: 1;
+}
+
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    backdrop-filter: blur(5px);
+}

@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    color: #333;
+}
+
+.navbar {
+    background-color: #f88379;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar .logout-btn {
+    color: red;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f3f3f3;
+}
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: url('/dept/img/Designer.png') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover,
+.logout-btn:hover {
+    background-color: #e0dfdf;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: transparent;
+}
+
+/* Header Section */
+.header {
+    margin-bottom: 60px;
+    background-color: transparent;
+}
+
+.header img {
+    width: 90px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Grid Layout */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    background-color: transparent;
+}
+
+/* Cards */
+.card {
+    background: rgb(235, 228, 228); /* ✅ Light white with transparency */
+    backdrop-filter: blur(12px);          /* ✅ Glassmorphism effect */
+    -webkit-backdrop-filter: blur(12px);  /* ✅ Safari support */
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(171, 110, 110, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+    color: #000; /* ✅ Ensure text is readable */
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.card button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 80%;
+}
+
+.card button:hover {
+    background-color: #7d6060;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Toggle Switch */
+.toggle-container {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-label {
+    margin-left: 8px;
+    font-size: 18px;
+    color: #000;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
