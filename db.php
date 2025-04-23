@@ -2,7 +2,7 @@
 $host = "localhost"; // Use the updated port;  // XAMPP default host
 $user = "root";       // Default MySQL user
 $password = "";       // Default password (empty in XAMPP)
-$database = "gradiefy"; // Replace with your database name
+$database = ""; // Replace with your database name
 
 // Create a connection
 $conn = new mysqli($host, $user, $password, $database);
