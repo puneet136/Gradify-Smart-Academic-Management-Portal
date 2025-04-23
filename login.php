@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 session_start();
 
 // Database connection
-$conn = new mysqli("localhost", "root", "", "gradiefy");
+$conn = new mysqli("localhost", "root", "", "your_db_name");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="login-container">
         <div class="logo">
-            <img src="img/jaipur_engineering_college_and_research_centre_jecrc__logo__1_-removebg-preview.png" alt="JECRC Logo">
+            <img src="your_logo_path" alt="JECRC Logo">
         </div>
         <h2>Login</h2>
         <form method="post" action="">
