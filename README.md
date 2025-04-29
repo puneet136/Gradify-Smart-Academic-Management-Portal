@@ -40,4 +40,58 @@ Gradify is a web-based application designed to simplify student data, mid-term m
 ---
 
 ## 📁 Folder Structure
+Gradify/ ├── Faculty/ │ ├── mid_term_filter.php │ ├── mid_term_marks.php │ ├── submit_marks.php │ ├── attendance_filter.php │ ├── mark_attendance.php │ ├── submit_attendance.php │ ├── view_attendance.php │ └── export_attendance_csv.php ├── Student/ │ ├── student_dashboard.php │ ├── view_attendance.php │ └── view_marks.php ├── HOD/ │ ├── hod_dashboard.php │ ├── view_students.php │ ├── marks_submitted.php │ └── filter_marks_submitted.php ├── CSS/ │ ├── hod.css │ ├── faculty.css │ ├── student.css │ └── common.css ├── image/ │ ├── Background.jpg │ └── logo.png ├── db.php ├── index.php └── README.md
 
+
+---
+
+## 🛠️ Installation & Setup
+
+### 📌 Prerequisites
+
+- XAMPP or any PHP/MySQL environment
+- Git (optional)
+- A browser and a code editor like VS Code
+
+### ⚙️ Steps to Run
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/Gradify.git
+2.**Move to XAMPP htdocs Directory**
+
+Place the Gradify folder inside:
+        ```C:\xampp\htdocs\
+3.Start Apache & MySQL via XAMPP Control Panel
+
+4.Set Up the Database
+
+    Open your browser and go to: http://localhost/phpmyadmin
+
+    Create a new database named gradify
+
+    Import the SQL file containing tables:
+
+        user, exam_schedule, midterm_marks, attendance
+
+5.Update Database Connection
+
+  Open db.php and ensure it looks like:
+      $conn = new mysqli("localhost", "root", "", "your_db_name");
+6.Access the Project
+
+      Visit: http://localhost/Gradify/index.php to start
+
+📜 License
+This project is open-source and free to use for educational purposes.
+
+🙌 Developed By
+[Puneet Agrawal]
+B.Tech CSE (AI) | 2nd Year | JECRC Jaipur
+💻 Proficient in Java, PHP, DSA, Backend Development
+🏆 140+ LeetCode problems solved | 5⭐ Java on HackerRank
+🚀 Hackathons: Smart India Hackathon, Felicity'25 @ IIIT Hyderabad
+
+> ✅ Customize `[Puneet AGrawal]`, GitHub and LinkedIn links before uploading.
+
+Let me know if you'd like a sample SQL file or project screenshots section added too!
