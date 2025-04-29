@@ -98,6 +98,6 @@ Let me know if you'd like a sample SQL file or project screenshots section added
 
 ## 📸 Project Screenshot
 
-![Gradify Dashboard]()
+[Click Here for show Image]()
 ![Screenshot](https://drive.google.com/uc?export=view&id=1jNMcCwYhcAp3PC39PpgsWpsSNdNDvJ7W)
 
