@@ -95,3 +95,5 @@ B.Tech CSE (AI) | 2nd Year | JECRC Jaipur
 > ✅ Customize `[Puneet AGrawal]`, GitHub and LinkedIn links before uploading.
 
 Let me know if you'd like a sample SQL file or project screenshots section added too!
+
+![Gradify Screenshot]([https://drive.google.com/uc?export=view&id=1AbCdEFGhIjKlmNopQRsTUVWxyz](https://drive.google.com/file/d/1jNMcCwYhcAp3PC39PpgsWpsSNdNDvJ7W/view?usp=drive_link))
