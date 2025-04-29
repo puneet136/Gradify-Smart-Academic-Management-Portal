@@ -81,7 +81,7 @@ Place the Gradify folder inside:
 6.Access the Project
 
       Visit: http://localhost/Gradify/index.php to start
-
+---
 📜 License
 This project is open-source and free to use for educational purposes.
 
