@@ -92,7 +92,6 @@ B.Tech CSE (AI) | 2nd Year | JECRC Jaipur
 🏆 140+ LeetCode problems solved | 5⭐ Java on HackerRank
 🚀 Hackathons: Smart India Hackathon, Felicity'25 @ IIIT Hyderabad
 
-> ✅ Customize `[Puneet AGrawal]`, GitHub and LinkedIn links before uploading.
 
 Let me know if you'd like a sample SQL file or project screenshots section added too!
 
